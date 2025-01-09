@@ -1,15 +1,13 @@
-const fibonacci = function(pos) {
-    // let pos = Number(num)
-
-    if (pos < 0) {
+const fibonacci = function(position) {
+    if (position < 0) {
         return "OOPS"
-    } else if (pos == 0) {
+    } else if (position == 0) {
         return 0
     }
     
     let fib = []
 
-    for (let i=0; i<pos; i++) {
+    for (let i=0; i<position; i++) {
         if (i == 0 || i == 1) {
             fib.push(1)
         } else {
@@ -17,7 +15,7 @@ const fibonacci = function(pos) {
         }
     }
 
-    return fib[pos-1]
+    return fib[position-1]
 };
 
 // Do not edit below this line
